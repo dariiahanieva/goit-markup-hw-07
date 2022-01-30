@@ -153,32 +153,33 @@ textarea {
   text-align: center;
   align-items: center;
   cursor: pointer;
-  & ::before {
-    content: "";
-    width: 16px;
-    height: 15px;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-    margin-right: 9px;
-  }
-
-  .form-policy-check:checked + &::before {
-    border: none;
-    background-image: url(../img/icon-check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-  }
 }
 
 .form-check-link {
   color: var(--accent-color);
+}
+
+.form-check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 9px;
+}
+
+.form-policy-check:checked + .form-check-text::before {
+  border: none;
+  background-image: url(../img/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }

@@ -22,6 +22,16 @@
   text-decoration: none;
 }
 
+.footer-contacts__links {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+}
+
 .footer-contacts__address {
   margin-top: 20px;
 }
@@ -40,7 +50,7 @@
   color: var(--primary-white-color);
   margin-bottom: 20px;
   height: 16px;
-  font-family: Roboto;
+  font-family: var(--primary-fonts);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -53,15 +63,6 @@
   margin-right: 10px;
 }
 
-.footer-social__link {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  font-style: normal;
-}
 .footer-social__list {
   display: flex;
   margin-top: 20px;
